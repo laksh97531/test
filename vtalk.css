@@ -1,0 +1,316 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider{
+    overflow: hidden;
+    width: 100%;
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+.slider figure img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 20s forwards;
+}
+@keyframes animate{
+    0%{left: 0%;}
+    10%{left: 0%;}
+    12%{left: -100%;}
+    22%{left: -100%;}
+    24%{left: -200%;}
+    34%{left: -200%;}
+    36%{left: -300%;}
+    46%{left: -300%;}
+    48%{left: -400%;}
+    58%{left: -400%;}
+    60%{left: -300%;}
+    70%{left: -300%;}
+    72%{left: -200%;}
+    82%{left: -200%;}
+    84%{left: -100%;}
+    94%{left: -100%;}
+    96%{left: 0%;}
+
+}
+.img{
+    margin-top: 61px;
+    height:200px
+}
+
+
+.logo{
+    width: 20%;
+    height: 2px;
+}
+
+.h{
+    margin-top: 36px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 21px;
+}
+.h2{
+    margin-top: 36px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 21px;
+}
+.div-img::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.img{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 281px;
+    height: 164px;
+    margin-left: 42px;
+    margin-top: -31px;
+    padding-top: 43px;
+}
+.color{
+    background-color: #FFCC01;
+    margin-top: -1px;
+    margin-bottom: 19px;
+    padding-bottom: 51px
+}
+.cul{
+    background-color:#eee;
+    margin-top: -5px;
+    padding-bottom: 58px;
+}
+
+.ck{
+        margin-top:25px;
+        text-align: center;
+        font-size: 25px;
+    }
+.k2{
+        margin-top: 15px;
+        background-color: #ffcc01;
+        color: black;
+        text-align: center;
+    
+    }
+.top{
+    margin-top: 20px;
+}
+.dk{
+    margin-top: 21px;
+}
+ .vodeo{
+    display: flex;
+    margin-top: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+ }
+.k{
+    text-align: center;
+    margin-top: 27px;
+}
+.v{
+    margin-top: 27px;
+    text-align: center;
+}
+.i{
+    margin-top: 30px;
+    margin-left: 105px;
+}
+.footer{
+    width: 221px;
+    display: block;
+    padding: 11px;
+    margin-left: 111px;
+    margin-top: 43px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    color: #2EA3F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.smile{
+    background-color: #002b64;
+    height: 260px;
+    width: 100%;
+    padding-top: 20px;
+    line-height: 28px;
+    margin-top: 23px;
+}
+.column {
+    float: left;
+    width: 20%;
+    color: #2EA3F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.column a{
+    color: #2EA3F2;
+    text-decoration: none;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    width: 193px;
+    display: block;
+    padding: 11px;
+    margin-left: 25px;
+    margin-top: 18px;
+}
+
+.last{
+    background-color: black;
+    color: gray;
+    padding-left: 164px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+.hero{
+    position: inherit;
+    margin-top: 0px;
+}
+.container{
+    background-color: #012b65;
+}
+.container p{
+    display: inline-block;
+    color: white;
+    margin-left: 187px;
+    margin-right: -151px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+}
+.container a{
+    color: white;
+    text-decoration: none;
+}
+.active{
+    color: #002b64;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.cm-e-menu {
+    background-color: white;
+    margin-left: 548px;
+    position: relative;
+    margin-top: -78px;
+    z-index: 1000;
+    color: black;
+    font-weight: 200;
+   
+}
+.cm-e-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.cm-e-menu li {
+    position: relative;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: capitalize !important;
+    list-style: none;
+
+  -webkit-transition: background-color ease-in 300ms;
+  -moz-transition: background-color ease-in 300ms;
+  -ms-transition: background-color ease-in 300ms;
+  -o-transition: background-color ease-in 300ms;
+  transition: background-color ease-in 300ms;
+}
+.cm-e-menu li:hover {
+  background-color: rgb(238, 235, 235);
+  text-shadow: 0 10px 10px rgb(250, 246, 246);
+}
+.cm-e-menu ul li.topmenu {
+    display: inline-table;
+    padding: 31px;
+    padding-left: 0px;
+}
+.cm-e-menu .topmenu ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+.cm-e-menu li:hover > ul {
+  display: table;
+}
+.cm-e-menu ul.submenu {
+  top: 100%;
+  left: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  
+}
+.cm-e-menu ul.submenu .submenu {
+  top: -0.5em;
+  left: 100%;
+  font-size: 1em;
+}
+.cm-e-menu ul.submenu li {
+    padding: 1.2em 3.5em;
+  font-size: 0.9rem;
+}
+.cm-e-menu li.divider {
+  padding: 0;
+  border-top: 1px solid gray;
+  margin: 0.5rem auto 0.3rem;
+  cursor: default;
+}
+.cm-e-menu li.divider:hover {
+  background-color: transparent;
+}
+.vtalk{
+    background-color: white;
+    width: 40%;
+    margin-top: 2px;
+    position: inherit;
+    margin-left: 26px;
+}
+.cm-e-menu ul.submenu a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+background-color: beige;
+margin-left: 6pc;
+margin-top: 4pc;
+padding-bottom: 12px;
+margin-right: 59pc;
+padding-left: 52px;
+padding-top: 10px;
+line-height: 30px

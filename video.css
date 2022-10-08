@@ -1,0 +1,15 @@
+body{
+    background-color: salmon;
+}
+.videoes{
+    margin-top: 80px;
+}
+.videoes h1{
+    text-align: left;
+}
+.owl-carousel{
+    top: 40px;
+}
+.owl-carousel .item-viedo{
+    height: 300px;
+}
