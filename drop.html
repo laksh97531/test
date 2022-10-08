@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drop.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <nav class="flex">
+        <div class="logo">
+            <img src="logo (1).png" alt="pic">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search Programs" id="tea">
+            <i class="fa fa-search" aria-hidden="true" id="ser"></i>
+        </div>
+        <div class="request">
+            <input type="button" value="Request A Call Back" id="rep">
+        </div>
+        <div class="apply">
+            <input type="button" value="Apply Now" id="plate">
+        </div>
+        <div class="login" style="margin-left:40px;margin-top: 10px;">
+            <h1>Login Now</h1>
+            <img src="login.png" alt="pic">
+        </div>
+        <div class="cm-e-menu">
+            <ul>
+                <li class="topmenu">
+                    <a class="progaram">Programs and degrees<i class="fa-solid fa-angle-down" style="padding-left: 20px;"></i></a>
+                    <ul class="submenu">
+                        <li>
+                            <a>Management</a>
+                            <ul class="submenu">
+                                <li><a href="#">Bachelor of Business Administration</a></li>
+                                <li><a href="#">Master of Business Administartion</a></li>
+                                <li><a href="#">MBA with specailization in Digital Marketing Management</a></li>
+                                <li><a href="#">MBA with specailization in HR Analytics</a></li>
+                                <li><a href="#">MBA with specailization in Data Science</a></li>
+                                <li><a href="#">MBA with specailization in Business Analytics</a></li>
+                                <li><a href="#">MBA with specailization in Digital Enterpreneurship</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Information Technology</a>
+                            <ul class="submenu">
+                                <li><a href="#">Bachelor of Computer Applications</a></li>
+                                <li><a href="#">BCA with specialization in cloud & security</a></li>
+                                <li><a href="#">Master of Computer Applications</a></li>
+                                <li><a href="#">MCA with specialization in Blockchain</a></li>
+                                <li><a href="#">MCA with specialization in ML & AL</a></li>
+                                <li><a href="#">MCA with specialization in Machine Learning</a></li>
+                                <li><a href="#">MCA with specialization in AR & VR</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Arts & Humanties</a>
+                            <ul class="submenu">
+                                <li><a href="#">Bachelorof Arts</a></li>
+                                <li><a href="#">Bachelor of Arts (Hindi Medium)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Commerce</a>
+                            <ul class="submenu">
+                                <li><a href="#">Master of Commerce (financial Management)</a></li>
+                                <li><a href="#">M.Com with specialization in Fintech /a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Media & Journalism</a>
+                            <ul class="submenu">
+                                <li><a href="#">Master of Arts (Journalism And Mass Communication)</a></li>
+                                <li><a href="#">Bachelor of Arts (Hindi Medium)</a></li>
+                            </ul>
+                        </li>
+                        <li style="text-decoration:none;">
+                            <a href="">Amity PROx</a>
+                        </li>
+                        <li>
+                            <a href="#">Free Openlearn Couses</a>
+                        </li>
+                        <li>
+                            <a href="#">Free Couses</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="Screenshot .png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pic2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pic3.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+</body>
+
+</html>
